@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Lilita+One&family=Montserrat&display=swap");
+.nav {
+  /* border: 1px solid black; */
+  background-color: white;
+  width: 100%;
+  height: 15vh;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.nav-left {
+  /* border: 1px solid black; */
+  background-color: white;
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.nav-img {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.nav-img img {
+  margin-top: 1%;
+  margin-left: 8%;
+  background-color: white;
+}
+
+.nav-mid {
+  /* border: 1px solid black; */
+  background-color: white;
+  width: 34%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-mid > p {
+  background-color: white;
+  font-family: "Itim", cursive;
+  margin-top: 15%;
+  color: #2fa969;
+}
+.nav-right {
+  /* border: 1px solid black; */
+  background-color: white;
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-buttons {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-but-left {
+  /* border: 1px solid black; */
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-but-left button {
+  width: 60%;
+  height: 40%;
+  background-color: #232d31;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 13%;
+}
+.nav-but-right {
+  /* border: 1px solid black; */
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-but-right button {
+  background-color: #2fa969;
+  width: 60%;
+  height: 40%;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 13%;
+}
