@@ -1,88 +1,166 @@
-@import url("https://fonts.googleapis.com/css2?family=Itim&family=Jura&family=Lilita+One&family=Montserrat&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Jura&family=Lilita+One&family=Montserrat&family=Nunito&display=swap");
 .votes {
+  /* border: 1px solid black; */
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   width: 100%;
-  height: 80vh;
-}
-.votes-timer {
-  /* border: 1px solid black; */
+  height: 100vh;
   margin-top: 2%;
-  font-family: "Jura", sans-serif;
-  font-weight: bold;
-  font-size: larger;
+  /* position: relative; */
+}
+.vote-title {
+  /* border: 1px solid black; */
   width: 100%;
-  height: 10vh;
+  height: 15%;
+  margin-bottom: 5%;
+}
+.vote-title p {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Jura", sans-serif;
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
-.votes-parties {
+.vote-box1 {
   /* border: 1px solid black; */
+  width: 80%;
+  /* height: 50%; */
+  margin-top: 2%;
+  margin-left: 10%;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
-.about-vote {
+.box1-type {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 60px;
+}
+.box1-type p {
+  font-size: medium;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 0.5%;
+}
+.box1-reset {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 40px;
   display: flex;
   flex-direction: row;
-  margin-top: 1%;
+}
+.reset-left {
+  /* border: 1px solid black; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.reset-left p {
+  margin-left: 10px;
+  font-size: medium;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.reset-right {
+  /* border: 1px solid black; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.parties-logo {
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  z-index: 10;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  margin-right: 10%;
-  margin-left: 25%;
-}
-.parties-logo img {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  padding: 2%;
-  border-radius: 5px;
-}
-.parties-Title {
-  height: 80px;
-  width: 300px;
-  background-color: #d9d9d9;
-  display: flex;
-  justify-content: center;
-  margin-top: 0.3%;
-}
-.parties-Title p {
+.reset-right button {
+  margin-right: 10px;
+  width: 80px;
   height: 80%;
+  color: #fff;
+  background-color: #2fa969;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.box1-candidate {
+  /* border: 1px solid black; */
   width: 100%;
-  background-color: #d9d9d9;
+}
+.vote-button {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
 }
-
-.parties-vote {
+.vote-button button {
+  margin-left: 2%;
   width: 100px;
-  height: 100px;
+  height: 35px;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.v-b-1 {
   background-color: #2fa969;
-  z-index: 10;
+  border: none;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  margin-right: 10%;
-  margin-left: 5%;
 }
-
-.parties-vote div {
-  width: 100%;
-  height: 100%;
+.v-b-2 {
+  background-color: #232d31;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.help-box {
+  position: fixed;
   background-color: #2fa969;
+  width: 70px;
+  height: 70px;
+  bottom: 0%;
+  right: 0%;
+  margin-bottom: 2%;
+  margin-right: 1%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.help-box:hover {
+  width: 72px;
+  height: 72px;
+  box-shadow: 0px 0px 5px rgba(47, 169, 105, 1);
+}
+.help-box p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  font-size: 36px;
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
 }
-
-.parties-vote div img {
-  width: 100%;
-  height: 90%;
+.help-box-message-space {
+  position: fixed;
+  background-color: rgba(35, 45, 49, 0.8);
+  width: 300px;
+  height: 400px;
+  bottom: 0%;
+  right: 0%;
+  margin-bottom: 6.7%;
+  margin-right: 1%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }

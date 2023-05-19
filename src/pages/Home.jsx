@@ -1,10 +1,9 @@
 import React from "react";
 import NavigationBar from "../components/Navigation/NavigationBar";
-// import Register from "../components/registerform/Register";
 import "./Home.css";
-import Otp from "./Otp";
 import Register from "../components/registerform/Register";
-import VotingPage from "./VotingPage";
+import Login from "../components/registerform/Login";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -12,10 +11,9 @@ const Home = () => {
       <div>
         <NavigationBar />
       </div>
-      <div>
-        {/* <Otp /> */}
-        {/* <Register /> */}
-        <VotingPage />
+      <div className="home_ll">
+        <Register />
+        {/* <Login /> */}
       </div>
     </div>
   );

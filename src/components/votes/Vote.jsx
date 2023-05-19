@@ -3,58 +3,52 @@ import "./Vote.css";
 import b1 from "../../images/b1.png";
 import b2 from "../../images/b2.png";
 import b3 from "../../images/b3.png";
-import b4 from "../../images/b4.png";
-import HowToVoteIcon from "@mui/icons-material/HowToVote";
+// import b4 from "../../images/b4.png";
+// import HowToVoteIcon from "@mui/icons-material/HowToVote";
 import vote from "../../images/vote.jpg";
+import CandidateBox from "../candidateBox/CandidateBox";
+import Footer from "../footer/Footer";
+import Help from "../help/Help";
+import Chatbot from "../Chat/Chat";
+import { useState } from "react";
 
 const Vote = () => {
+  const [openHelp, setOpenHelp] = useState(false);
+  const handlehelp = () => {
+    setOpenHelp(!openHelp);
+  };
   return (
-    <div className="votes">
-      <div className="votes-timer">
-        <p>Timer: 04:59 mins</p>
-      </div>
-      <div className="votes-parties">
-        <div className="about-vote">
-          <div className="parties-logo">
-            <img src={b1} alt="b1" />
-          </div>
-          <div className="parties-Title">
-            <p>Bharatiya Janata Party</p>
-          </div>
-          <div className="parties-vote">
-            <div>
-              <img src={vote} alt="vote" />
-            </div>
-          </div>
+    <>
+      <div className="votes">
+        <div className="vote-title">
+          <p>2024 NATIONAL ELECTION</p>
         </div>
-        <div className="about-vote">
-          <div className="parties-logo">
-            <img src={b2} alt="b2" />
-          </div>
-          <div className="parties-Title">
-            <p>Indian National Congress</p>
-          </div>
-          <div className="parties-vote">
-            <div>
-              <img src={vote} alt="vote" />
-            </div>
-          </div>
+        <div>
+          <CandidateBox />
+          <CandidateBox />
+          <CandidateBox />
+          <CandidateBox />
+          <CandidateBox />
+          <CandidateBox />
         </div>
-        <div className="about-vote">
-          <div className="parties-logo">
-            <img src={b3} alt="b3" />
-          </div>
-          <div className="parties-Title">
-            <p>Aam Aadmi Party</p>
-          </div>
-          <div className="parties-vote">
-            <div>
-              <img src={vote} alt="vote" />
-            </div>
-          </div>
+        <div className="vote-button">
+          <button className="v-b-1">Preview</button>
+          <button className="v-b-2">Submit</button>
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
-    </div>
+      <div className="help-box" onClick={() => handlehelp()}>
+        <p>?</p>
+      </div>
+      {openHelp && (
+        <div className="help-box-message-space">
+          <Chatbot />
+        </div>
+      )}
+      <Help />
+    </>
   );
 };
 

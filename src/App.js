@@ -1,14 +1,12 @@
 import "./App.css";
-import Chatbot from "./pages/Chatbot";
-import Home from "./pages/Home";
 import VotingPage from "./pages/VotingPage";
+import Home from "./pages/Home.jsx";
 
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
       <VotingPage />
-      {/* <Chatbot /> */}
+      {/* <Home /> */}
     </div>
   );
 }
